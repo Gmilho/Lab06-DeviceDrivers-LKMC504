@@ -1,0 +1,8 @@
+config DDRIVERL6
+    default m
+    tristate "Módulo de player de música"
+    help
+        Módulo que implementa um driver de música para o kernel que usa o alsa como "espinha".
+        O módulo printa "With the biggest request, layin' the wax and spinnin' the sound!" quando carregado
+        e "We await your return warrior" quando desligado.
+        Config default: 'm'.

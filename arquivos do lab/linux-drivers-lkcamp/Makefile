@@ -1,0 +1,1 @@
+obj-$(CONFIG_DDRIVERL6) += ddriver_L6.o
