@@ -1,0 +1,1 @@
+qemu-system-x86_64 -drive file=../my_disk.raw,format=raw,index=0,media=disk -m 4G -nographic -kernel ./arch/x86_64/boot/bzImage -append "root=/dev/sda rw console=ttyS0 loglevel=6" -fsdev local,id=fs1,path=../shared_folder,security_model=none -audiodev pipewire,id=snd0 -device AC97,audiodev=snd0 -device virtio-9p-pci,fsdev=fs1,mount_tag=shared_folder --enable-kvm
